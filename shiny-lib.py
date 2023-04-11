@@ -12,7 +12,7 @@ def Request(customerName, customerKey, toRequestFrom,   amount,appId):
  res = requests.post('https://shinies.space/request-with-key?user='+customerName+'&key='+customerKey+'&torequest='+toRequestFrom+'&amount='+amount+'appid='+appId)
  return res.text
 
-def CheckUser(username):
+def UserInfo(username):
  res = requests.get('https://shinies.space/user-info/'+username)
  return res.text
 
