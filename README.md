@@ -2,8 +2,6 @@
 Shinies, or, respectively, a Shiny, is a currency for Scratch. 
 Use this library to interact with Shiny's api.
 
-[Shiny's repository](https://github.com/emma144/shinies)
-
 
 ### UserInfo() Fuction
 ```python
