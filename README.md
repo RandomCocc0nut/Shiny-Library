@@ -34,6 +34,6 @@ Gets info about an application
 ## Pay(customerName, customerkey, receiver, amount) & AppPay(customerName, key, app,receiver,amount)
  Transfers money from one account to another
  
-##Request(customerName, customerKey, toRequestFrom, amount, appId)
+## Request(customerName, customerKey, toRequestFrom, amount, appId)
 >Note: This feature will work just for 1.0 api.
- Requets from an account the specified amount of money
+ Requests from an account the specified amount of money
