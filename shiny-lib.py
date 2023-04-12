@@ -36,10 +36,11 @@ def AppPay(customerName, key, app,receiver, amount):
  return res.text
 
 def request(customerName, customerKey, toRequestFrom,   amount,appId):
-if v == '1':
- res = requests.post('https://shinies.space/request-with-key?user='+customerName+'&key='+customerKey+'&torequest='+toRequestFrom+'&amount='+amount+'appid='+appId)
-elif == '2':
- return "Requests are not anymore a feature in v2"
+ if v == '1':
+  res = requests.post('https://shinies.space/request-with-key?user='+customerName+'&key='+customerKey+'&torequest='+toRequestFrom+'&amount='+amount+'appid='+appId)
+  return res.text
+ elif == '2':
+  return "Requests are not anymore a feature in v2"
 
 
 
