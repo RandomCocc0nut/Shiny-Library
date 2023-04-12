@@ -36,4 +36,5 @@ Gets info about an application
  
 ## Request(customerName, customerKey, toRequestFrom, amount, appId)
 >Note: This feature will work just for 1.0 api.
- Requests from an account the specified amount of money
+
+Requests from an account the specified amount of money
