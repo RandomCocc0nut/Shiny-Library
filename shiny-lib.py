@@ -20,8 +20,8 @@ def AppInfo(key):
  res = requests.get('https://shinies.space/api/app/'+key)
  return res.text
 
-def Pay(key, reciever, amount):
- res = requests.post('https://shinies.space/api/pay', data={'key': key,'reciever': reciever, 'amount': amount}) 
+def Pay(key, receiver, amount):
+ res = requests.post('https://shinies.space/api/pay', data={'key': key,'receiver': receiver, 'amount': amount}) 
  return res.text
 
 def AppPay(key, app, amount):
