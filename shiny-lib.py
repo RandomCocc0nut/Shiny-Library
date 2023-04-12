@@ -25,17 +25,19 @@ def AppInfo(key):
  return res.text
 
 def Pay(customerName, customerkey, receiver, amount):
+ if v == '2'
   res = requests.post('https://shinies.space/api/pay', data={'key': customerkey,'receiver': receiver, 'amount': amount}) 
-  return res.text
+ elif v == '1'
+  res = requests.post('https://shinies.space/pay-with-key?user='+customerName+'&key='+key+'&receiver='+receiver+'&amount='+amount+'appid='+app)
+ return res.text
 
 def AppPay(customerName, key, app,receiver,amount):
  if v == '2'
   res = requests.post('https://shinies.space/api/pay', data={'key': key,'app': app, 'amount': amount}) 
  elif v == '1'
-  res = requests.post('https://shinies.space/pay-with-key?user='+customerName+'&key='+key+'&receiver='+receiver+'&amount='+amount+'appid='+app)
- return res.text
+ return "App-pay is a v2 feature"
 
-def request(customerName, customerKey, toRequestFrom, amount,appId):
+def request(customerName, customerKey, toRequestFrom, amount, appId):
  if v == '1':
   res = requests.post('https://shinies.space/request-with-key?user='+customerName+'&key='+customerKey+'&torequest='+toRequestFrom+'&amount='+amount+'appid='+appId)
   return res.text
