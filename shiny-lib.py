@@ -28,7 +28,7 @@ def Pay(customerName, customerkey, receiver, amount):
     if v == '2':
         res = requests.post('https://shinies.space/api/pay', data={'key': customerkey,'receiver': receiver, 'amount': amount}) 
     elif v == '1':
-        res = requests.post(f'https://shinies.space/pay-with-key?user={customerName}&key={key}&receiver={receiver}&amount={amount}&appid={app}')
+        res = requests.post(f'https://shinies.space/pay-with-key?user={customerName}&key={customerkey}&receiver={receiver}&amount={amount}&appid={app}')
     return res.text
 
 def AppPay(customerName, key, app,receiver,amount):
