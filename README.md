@@ -32,7 +32,16 @@ Gets info about an application
 ```JSON Keys: exists (boolean), name (string), receiver (string)```
 
 ## Pay(customerName, customerkey, receiver, amount) & AppPay(customerName, key, app,receiver,amount)
+> AppPay it's just a v2.0 feature
+
  Transfers money from one account to another
+| Argument | Description | v1.0 | 2.0
+| --- | --- | --- | --- | 
+| `customerName` | The user who get transfered the money from |:white_check_mark:|:x:
+| `customerKey` | The user's key who get transfered the money from |:white_check_mark:|:white_check_mark:
+| `receiver` | The user who receive the money |:white_check_mark:|:white_check_mark:
+| `amount` | The amount of money who gets the reciever |:white_check_mark:|:white_check_mark:
+| `appId` | The id of the application that will transfer the money |:white_check_mark:|:x:
  
 ## Request(customerName, customerKey, toRequestFrom, amount, appId)
 >Note: This feature will work just for 1.0 api.
