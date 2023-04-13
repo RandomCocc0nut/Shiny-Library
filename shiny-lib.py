@@ -24,14 +24,14 @@ def AppInfo(key):
     res = requests.get('https://shinies.space/api/app/'+key)
     return res.text
 
-def Pay(customerName, customerkey, receiver, amount):
+def Pay(customerName, customerkey, receiver, amount, app):
     if v == '2':
         res = requests.post('https://shinies.space/api/pay', data={'key': customerkey,'receiver': receiver, 'amount': amount}) 
     elif v == '1':
         res = requests.post(f'https://shinies.space/pay-with-key?user={customerName}&key={customerkey}&receiver={receiver}&amount={amount}&appid={app}')
     return res.text
 
-def AppPay(customerName, key, app,receiver,amount):
+def AppPay(customerName, key, app,receiver ,amount):
     if v == '2':
         res = requests.post('https://shinies.space/api/pay', data={'key': key,'app': app, 'amount': amount}) 
     elif v == '1':
