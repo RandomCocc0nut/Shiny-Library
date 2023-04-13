@@ -6,14 +6,18 @@ Use this library to interact with Shiny's api.
 ## GetUser(username)
 Example of response:
 >Note: This example of response is just for 2.0 api.
-```
+```json
 {"balance":0,
 "history":[{"type":"paid","user":"__evelyn","amount":10,"date":0}, {"type":"received","user":"__evelyn","amount":10,"date":0}],
 "pins":["__evelyn","__evelyn","__evelyn"],
 "admin":true,
 "exists":true}
 ```
-or  ```{"exists":false}``` if the user does not exist or hasn't registered their account
+or 
+```json
+{"exists":false}
+``` 
+if the user does not exist or hasn't registered their account
 
 ## GetVersion()
 Gets the latest version
@@ -21,11 +25,15 @@ Gets the latest version
 ## UserHistory(username)
 Example of response:
 >Note: This example of response is just for 2.0 api.
-```
+```json
 {"exists":true,
 "html":"<br /><a href=\"/u/__evelyn\">__evelyn</a> paid you 10 shinies 57 years ago<br />You paid <a href=\"/u/__evelyn\">__evelyn</a> 10 shinies 57 years ago"}
 ```
-or  ```{"exists":false}``` if the user does not exist or hasn't registered their account
+or 
+```json
+{"exists":false}
+``` 
+if the user does not exist or hasn't registered their account
 
 ## AppInfo(key)
 Gets info about an application
