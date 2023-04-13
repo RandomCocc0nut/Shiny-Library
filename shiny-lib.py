@@ -37,7 +37,7 @@ def AppPay(customerName, key, app,receiver,amount):
     elif v == '1':
         return "App-pay is a v2 feature"
 
-def request(customerName, customerKey, toRequestFrom, amount, appId):
+def Request(customerName, customerKey, toRequestFrom, amount, appId):
     if v == '1':
         res = requests.post(f'https://shinies.space/request-with-key?user={customerName}&key={customerKey}&torequest={toRequestFrom}&amount={amount}appid={appId}')
         return res.text
